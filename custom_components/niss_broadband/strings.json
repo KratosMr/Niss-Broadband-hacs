@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "NISS Broadband Setup",
+        "description": "Enter your session cookies from portal.nissbroadband.com.\n\nOpen your browser DevTools (F12) → Application → Cookies while logged in to copy them.",
+        "data": {
+          "cookie_portal": "customerportal cookie",
+          "cookie_identity": "_identity-backend-user cookie",
+          "cookie_csrf": "_csrf-backend-user cookie",
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to reach portal.nissbroadband.com. Check your network.",
+      "invalid_auth": "The portal rejected the cookies (HTTP 401/403). Refresh them from your browser.",
+      "cannot_parse": "Connected successfully but no usage data was found. The page layout may have changed.",
+      "unknown": "Unexpected error — check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "NISS Broadband is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "NISS Broadband Options",
+        "data": {
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  }
+}

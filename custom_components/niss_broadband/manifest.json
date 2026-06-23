@@ -1,0 +1,12 @@
+{
+  "domain": "niss_broadband",
+  "name": "NISS Broadband",
+  "version": "1.0.0",
+  "config_flow": true,
+  "documentation": "https://github.com/YOUR_USERNAME/niss_broadband",
+  "issue_tracker": "https://github.com/YOUR_USERNAME/niss_broadband/issues",
+  "requirements": ["requests>=2.28.0", "beautifulsoup4>=4.11.0"],
+  "dependencies": [],
+  "codeowners": ["@YOUR_USERNAME"],
+  "iot_class": "cloud_polling"
+}
