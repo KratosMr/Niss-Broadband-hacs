@@ -74,7 +74,7 @@ def parse_usage_value(value_text: str) -> float | None:
             break
 
     try:
-        return round(float(text) * multiplier, 4)
+        return round(float(text.replace(",", "")) * multiplier, 4)
     except ValueError:
         return None
 
